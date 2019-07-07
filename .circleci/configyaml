@@ -21,7 +21,6 @@ jobs:
     steps:
       - checkout
 
-      - cd webserver
       # specify any bash command here prefixed with `run: `
-      - run: go build /
-      - run: go test -v ./...
+      - run: echo "Hello Build"
+      # - run: go test -v ./...
