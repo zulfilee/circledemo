@@ -23,4 +23,6 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: echo "Hello Build"
+      - run: cd webserver
+      - run: go build .  
       # - run: go test -v ./...
