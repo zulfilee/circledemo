@@ -25,3 +25,12 @@ jobs:
       - run: echo "Hello Build"
       - run: cd webserver
       # - run: go test -v ./...
+
+  build2:
+    docker:
+      # specify the version
+      - image: circleci/golang:1.9
+
+    steps:
+
+      - run: echo "Hello Build 2"
